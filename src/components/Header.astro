@@ -1,0 +1,141 @@
+---
+import "@fontsource-variable/inter";
+
+import Phone from "../icons/Phone.astro";
+import Whatsapp from "../icons/Whatsapp.astro";
+import Mail from "../icons/Mail.astro";
+import Linkedin from "../icons/Linkedin.astro";
+---
+
+<link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+<!-- Font Awesome icons (free version)-->
+<script
+    src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"
+    crossorigin="anonymous"></script>
+
+<header>
+    <div class="container">
+        <div class="data">
+            <h1>David Pastor Crespo</h1>
+            <span
+                ><span>Dirección: </span>Calle Víctor de la Serna 1, Alicante,
+                España
+            </span>
+            <span><span>Correo: </span>davidgasol913@gmail.com</span>
+            <span><span>Teléfono: </span>+34 611076077</span>
+            <footer>
+                <a class="social-icon" href="tel:+34611076077" target="_blank"
+                    ><Phone /></a
+                >
+                <a
+                    class="social-icon"
+                    href="mailto:davidgasol913@gmail.com"
+                    target="_blank"
+                >
+                    <Mail />
+                </a>
+                <a
+                    class="social-icon"
+                    href="https://wa.me/34611076077"
+                    target="_blank"><Whatsapp /></a
+                >
+                <a
+                    class="social-icon"
+                    href="https://www.linkedin.com/in/
+david-pastor-crespo-6711b2242
+"
+                    target="_blank"><Linkedin /></a
+                >
+            </footer>
+        </div>
+        <img class="profile-image" src="public/david.jpg" alt="david photo" />
+    </div>
+</header>
+
+<style>
+    header {
+        max-width: 750px;
+        margin: 0 auto 50px;
+    }
+
+    span span {
+        color: #000;
+        font-weight: 500;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    .data {
+        display: flex;
+        flex-direction: column;
+        padding-right: 30px;
+    }
+
+    h1 {
+        font-size: 3rem;
+        opacity: 100%;
+    }
+
+    img {
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        width: 128px;
+        border-radius: 100%;
+        border: 2px solid #000;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    span {
+        color: #666;
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+        font-size: 0.85rem;
+        letter-spacing: -0.05rem;
+    }
+
+    footer {
+        color: #555;
+        font-size: 0.65rem;
+        display: flex;
+        gap: 4px;
+        margin-top: 8px;
+    }
+
+    footer a {
+        color: #aaa;
+        background-color: #eee;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #ccc;
+        padding: 4px;
+        height: 32px;
+        width: 32px;
+        border-radius: 30%;
+    }
+
+    footer a:hover {
+        background: #ddd;
+        border: 2px solid #ccc;
+    }
+
+    @media (width <= 600px) {
+        .container {
+            flex-direction: column-reverse;
+        }
+
+        .data {
+            justify-content: center;
+            align-items: center;
+            padding-right: 0;
+            text-align: center;
+        }
+    }
+</style>

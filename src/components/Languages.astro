@@ -1,0 +1,88 @@
+<section>
+    <h2>Idiomas</h2>
+    <div class="idiomas-container">
+        <!-- Primer Idioma: Español -->
+        <div class="idioma-box">
+            <div class="idioma">Español</div>
+            <div class="nivel">Nativo</div>
+        </div>
+        <!-- Segundo Idioma: Inglés -->
+        <div class="idioma-box">
+            <div class="idioma">Inglés</div>
+            <div class="nivel">B1</div>
+        </div>
+
+        <!-- Tercer Idioma: Valenciano -->
+        <div class="idioma-box">
+            <div class="idioma">Valenciano</div>
+            <div class="nivel">B2</div>
+        </div>
+    </div>
+</section>
+
+<style>
+    section {
+        max-width: 750px;
+        margin: 0 auto 50px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        font-weight: 600;
+        letter-spacing: -0.4px;
+    }
+
+    h3 {
+        color: rgb(49, 51, 51);
+        margin-bottom: 10px;
+    }
+
+    /* Contenedor de los idiomas */
+    .idiomas-container {
+        display: flex;
+        gap: 40px;
+    }
+
+    /* Estilo de cada caja de idioma */
+    .idioma-box {
+        width: 150px;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Estilo para la parte del idioma */
+    .idioma {
+        flex: 1;
+        background-color: #dad0d0; /* Azul */
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        font-weight: bold;
+        letter-spacing: -0.6px;
+        border: 1px solid #000;
+        border-bottom: 0px;
+        opacity: 80%;
+    }
+
+    /* Estilo para la parte del nivel */
+    .nivel {
+        flex: 1;
+        background-color: #f8f9fa; /* Blanco grisáceo */
+        color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        border: 1px solid #000;
+    }
+
+    @media (max-width: 600px) {
+        .idiomas-container {
+            flex-wrap: wrap; /* Permitir que las cajas pasen a una nueva línea */
+            justify-content: left; /* Centrar los elementos */
+        }
+    }
+</style>

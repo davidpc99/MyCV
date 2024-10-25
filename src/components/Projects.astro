@@ -1,0 +1,88 @@
+---
+import Card from "./Card.astro";
+---
+
+<section>
+    <h2>Proyectos</h2>
+    <ul>
+        <li>
+            <h3>Trabajo Final de Grado</h3>
+            <p>
+                Aprendizaje de conocimientos a bajo nivel de la arquitectura del
+                transformer, así como sobre la metodología utilizada a la hora
+                de realizar entrenamientos haciendo uso de estos modelos.
+                Porteriormente, se realizó un estudio detallado de una
+                implementación completa en PyTorch del modelo Transformer, con
+                el objetivo de modificar el código para adaptarlo a una
+                arquitectura de solo codificador. Además, se añadieron máscaras
+                a las entradas del modelo, permitiendo truncar las secuencias de
+                entrada de manera eficiente. Finalmente, se realizó el
+                entrenamiento de un modelo haciendo uso del código generado para
+                resolver la tarea de reconocimiento de entidades nombradas.
+            </p>
+        </li>
+        <li>
+            <h3>Trabajo Final de Máster</h3>
+            <p>
+                Obtención de correspondencias bilingües de lemas a partir de
+                diccionarios normativos de la lengua para obtener mayor cantidad
+                de información en el entrenamiento de traductores automáticos
+                que utilizan un idioma con pocos recursos, haciendo uso de la
+                técnica code switching. Para ello, se obtienen las
+                correspondencias entre español y asturiano mediante el uso de la
+                distancia de edición, similitud del coseno de las definiciones,
+                herramientas de bilingual lexical induction (BLI) y modelos
+                masivos de lenguaje. Por último, se evalúa cada uno de los
+                métodos haciendo uso de un conjunto de evaluación anotado
+                manualmente para obtener el rendimiento de cada técnica con la
+                que obtener las correspondencias.
+            </p>
+        </li>
+    </ul>
+</section>
+
+<style>
+    section {
+        max-width: 750px;
+        margin: 0 auto 50px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        font-weight: 600;
+        letter-spacing: -0.4px;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+        font-weight: 500;
+        letter-spacing: -0.3px;
+        font-family: "Inter Variable", sans-serif, monospace;
+    }
+
+    li {
+        margin-bottom: 15px;
+    }
+
+    .flex-line {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 4px;
+    }
+
+    p {
+        color: rgb(49, 51, 51);
+    }
+
+    .flex-line p {
+        margin-left: 40px;
+        font-size: 1em;
+        color: black;
+    }
+
+    Card {
+        margin-bottom: 20px;
+    }
+</style>
